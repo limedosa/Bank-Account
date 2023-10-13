@@ -15,17 +15,6 @@ public abstract class Account
     public Account(){
 
     }
-    /**
-     * helper class allows for us to make random account number
-     * @param None 
-     * @return random int 
-     */
-    public static int makeAccNum(){
-        int min = 1_000_000_000; // smallest 9-digit num
-        int max = 999_999_999;  //largest 9 digit num
-        Random rand = new Random() ;
-        return rand.nextInt(max - min + 1) + min;
-    }
 
     /**
      * Withdraws the given amount form the checking account and incurs a fee if the balance is below the minimum
