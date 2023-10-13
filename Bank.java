@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-import java.util.ArrayList;
-=======
->>>>>>> Stashed changes
 
 /**
  * Represents a Bank
@@ -10,21 +6,6 @@ import java.util.ArrayList;
  * @version October 12, 2023
  */
 public class Bank {
-<<<<<<< Updated upstream
-    private ArrayList<Account> accounts = new ArrayList<>();
-    public Bank(){
-        this.accounts = new ArrayList<Account>();
-        System.out.println("Bank created successfully!");
-        }
-        
-    /**
-     * adds account to bank
-     */
-    public void addAccountNumber(int accountNum){
-account.add(accountNum);
-    }
-    }
-=======
     private Account[] bank;
     private int num = 0;
 
@@ -61,8 +42,18 @@ account.add(accountNum);
         }
         return rep;
     }
+    /**
+     * Returns the total amount of money in all the accounts in the bank
+     * @return double total amount of money in all the accounts in the bank
+     */
+    public double calculateFunds(){
+        double total  = 0;
+        for(int i = 0; i < bank.length;i++){
+            total += bank[i].balance;
+        }
+        return total;
+    }
     public static void main(String[] args){
 
     }
 }
->>>>>>> Stashed changes
