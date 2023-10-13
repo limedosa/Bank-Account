@@ -13,31 +13,8 @@ public abstract class Account
     protected int accountNum;
     public String accountName;
     public Account(){
-        Scanner newScan = new Scanner (System.in);
-        System.out.println("Enter the name of this account: ");
-        String newAccountName=newScan.next();
-        this.accountName = newAccountName;
-        System.out.println("Welcome to x Bank! /n There are two types of accounts; checking and savings. \nDo you want to open a checking account?(y/n)");
-        String checking = newScan.nextLine();
-        //if user said yes then make checking 
-        int newAccountNum = makeAccNum();
-        if (checking.contains("y")){
-            //make checking account TODO change after method is defined
-            CheckingAccount newChecking = new CheckingAccount(newAccountNum);
-            System.out.println("Checking account successfully created!");
-    }
-        System.out.println("Great! \nDo you want to open a savings account?(y/n)");
-        String savings = newScan.nextLine();
-        //if user said yes then make checking 
-        if (savings.contains("y")){
-            //make savings account  -- TODO change after method is defined
-            SavingsAccount newSavings = new SavingsAccount(newAccountNum);
-            System.out.println("Checking account successfully created!\n Welcome to our Bank, "+ accountName  + ".");
 
     }
-    // public static void MINBALANCE
-    
-}
     /**
      * helper class allows for us to make random account number
      * @param None 
