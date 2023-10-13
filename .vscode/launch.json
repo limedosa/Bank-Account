@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Bank",
+            "request": "launch",
+            "mainClass": "Bank",
+            "projectName": "Bank-Account_b8c5512e"
+        },
+        {
+            "type": "java",
+            "name": "SavingsAccount$Main",
+            "request": "launch",
+            "mainClass": "SavingsAccount$Main",
+            "projectName": "Bank-Account_b8c5512e"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

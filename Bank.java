@@ -145,7 +145,14 @@ public class Bank {
         System.out.println(bank1.bank[1]);
         System.out.println();
 
+        //testing for monthly interest 
+        System.out.println("Testing Monthly Interest:");
+        ((SavingsAccount)(bank1.bank[3])).accrueMonthlyInterest();
+        System.out.println(bank1.bank[3]);
+    
+        
+
         //assuming theres 3 accounts
-        System.out.println(bank1.findNum(3));
+        System.out.println("/n"+bank1.findNum(3));
     }
 }
