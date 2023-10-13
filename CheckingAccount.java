@@ -34,6 +34,7 @@ public class CheckingAccount extends Account
      */
     public String toString()
     {
-        return ("Checking account num: "+ this.accountNum+ "\tBalance: $"+ this.balance+"\tMinimum balance: " + min+ "\tOverdraft fee:" + fee);
+        return "Checking Account\nAccount Number: " + accountNum + "\nBalance: $" + balance
+                + "\nMinimum balance: " + min+ "\nOverdraft fee:" + fee;
     }
 }
