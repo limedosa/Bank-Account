@@ -42,9 +42,9 @@ public class Bank {
      * @return String representation of the bank
      */
     public String toString(){
-        String rep = "";
+        String rep = "This bank manages " + count + " accounts";
         for(int i = 0; i < bank.length;i++){
-            rep += bank[i];
+            rep += bank[i] + "\n";
         }
         return rep;
     }
