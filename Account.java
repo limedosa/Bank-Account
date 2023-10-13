@@ -12,8 +12,13 @@ public abstract class Account
     protected double balance;
     protected int accountNum;
     public String accountName;
-    public Account(){
-
+    public Account(double balance){
+        this.balance = balance;
+        //set account name
+        Scanner newScan = new Scanner (System.in);
+        System.out.println("Enter the name of this account: ");
+        String newAccountName=newScan.next();
+        this.accountName = newAccountName;
     }
 
     /**

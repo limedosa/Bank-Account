@@ -9,7 +9,8 @@ public class CheckingAccount extends Account
 {
     private final double min = 100;
     private final double fee = 25;
-    public CheckingAccount(){
+    public CheckingAccount(double b1){
+        super(b1);
     }
     /**
      * Withdraws the given amount form the checking account and incurs a fee if the balance is below the minimum
@@ -22,8 +23,10 @@ public class CheckingAccount extends Account
             System.out.println("** Withdrawal DENIED **: Insufficient balance.");
         else{
             this.balance -= amt;
-            if(this.balance < min)
-                this.balance -= 25;
+            if(this.balance < min) {//overdraft fee
+                this.balance -= fee;
+                System.out.println("** NOTE: Balance is low. Overdraft Fee was charged.");
+            }
         }
     }
     /**

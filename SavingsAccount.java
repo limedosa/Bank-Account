@@ -11,7 +11,8 @@ public class SavingsAccount extends Account
     private final double INTEREST = .005;
     private final double MONTHLYINTEREST = (INTEREST/12);
 
-    public SavingsAccount(){
+    public SavingsAccount(double b1){
+        super(b1);
     }
 
     /**
