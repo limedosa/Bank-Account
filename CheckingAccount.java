@@ -9,7 +9,9 @@ public class CheckingAccount extends Account
 {
     private final double min = 100;
     private final double fee = 25;
-
+    public CheckingAccount(int accountNum){
+        this.accountNum = accountNum;
+    }
     /**
      * Withdraws the given amount form the checking account and incurs a fee if the balance is below the minimum
      *
