@@ -11,8 +11,7 @@ public class SavingsAccount extends Account
     private final double INTEREST = .005;
     private final double MONTHLYINTEREST = (INTEREST/12);
 
-    public SavingsAccount(int accountNum){
-        this.accountNum = accountNum;
+    public SavingsAccount(){
     }
 
     /**
